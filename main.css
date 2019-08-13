@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
+
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+body.dark {
+  background-color: rgb(30,34,39);
+  color: #fff;
+}
+body.dark code[class*=language-],
+body.dark table tbody>tr:nth-child(odd)>td,
+body.dark table tbody>tr:nth-child(odd)>th {
+  background: #282c34
+}
+
+.tr {
+  opacity: 0.25;
+  filter: alpha(opacity=25); /* IE sucks so I have to put this for idiots who still use IE8 and lower */
+}
